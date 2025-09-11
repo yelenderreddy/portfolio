@@ -42,6 +42,26 @@
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
 }
 
+/* Special styling for MLM project */
+.project-tab:first-child {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-tab:first-child::before {
+  content: 'FEATURED';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  z-index: 1;
+}
+
 .tab-icon {
   width: 50px;
   height: 50px;
@@ -209,6 +229,20 @@
   border-radius: 12px;
   font-weight: 500;
   line-height: 1.6;
+}
+
+/* Special achievement styling for MLM project */
+.project-achievement:has(p:contains("business solution")) p {
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  position: relative;
+}
+
+.project-achievement:has(p:contains("business solution")) p::after {
+  content: '🚀';
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {

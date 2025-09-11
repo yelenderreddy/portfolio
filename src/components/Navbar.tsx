@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
         </div>
         
         <div className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <a onClick={() => scrollToSection('about')} className="nav-link">About</a>
-          <a onClick={() => scrollToSection('skills')} className="nav-link">Skills</a>
-          <a onClick={() => scrollToSection('projects')} className="nav-link">Projects</a>
-          <a onClick={() => scrollToSection('experience')} className="nav-link">Experience</a>
-          <a onClick={() => scrollToSection('contact')} className="nav-link">Contact</a>
+          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
+          <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
+          <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
+          <button onClick={() => scrollToSection('experience')} className="nav-link">Experience</button>
+          <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
         </div>
 
         <div className="nav-toggle" onClick={() => setIsOpen(!isOpen)}>

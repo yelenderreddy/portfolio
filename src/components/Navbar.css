@@ -44,6 +44,11 @@
   cursor: pointer;
   transition: color 0.3s ease;
   position: relative;
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
 }
 
 .nav-link:hover {

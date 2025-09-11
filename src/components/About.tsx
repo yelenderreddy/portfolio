@@ -5,10 +5,10 @@ import './About.css';
 
 const About: React.FC = () => {
   const skills = [
-    { icon: <Code />, title: 'Backend Development', description: 'Java, Spring Boot, Node.js, NestJS' },
-    { icon: <Database />, title: 'Database Management', description: 'Oracle, SQL, Supabase, JDBC' },
-    { icon: <Server />, title: 'API Development', description: 'REST APIs, JWT, Postman, Microservices' },
-    { icon: <Smartphone />, title: 'Frontend Development', description: 'React.js, HTML5, CSS3, JavaScript' }
+    { icon: <Code />, title: 'Backend Development', description: 'Java, Spring Boot, Node.js, NestJS, TypeScript' },
+    { icon: <Database />, title: 'Database Management', description: 'PostgreSQL, Oracle, SQL, Drizzle ORM, JDBC' },
+    { icon: <Server />, title: 'API Development', description: 'REST APIs, JWT, Razorpay, Payment Processing' },
+    { icon: <Smartphone />, title: 'Frontend Development', description: 'React.js, TypeScript, HTML5, CSS3, JavaScript' }
   ];
 
   return (
@@ -44,8 +44,14 @@ const About: React.FC = () => {
             <p className="about-description">
               My expertise spans the entire technology stack, from designing robust backend systems 
               with Java and Spring Boot to creating responsive frontend interfaces with React.js. 
+              I recently built a complete MLM (Multi-Level Marketing) platform featuring payment 
+              processing, referral management, and real-time analytics - demonstrating my ability 
+              to deliver production-ready business solutions.
+            </p>
+            
+            <p className="about-description">
               I am passionate about writing clean, maintainable code and implementing best practices 
-              in software development.
+              in software development, with a focus on creating applications that provide real business value.
             </p>
 
             <div className="about-details">

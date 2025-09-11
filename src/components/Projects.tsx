@@ -1,12 +1,35 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Database, Code, TrendingUp } from 'lucide-react';
+import { ExternalLink, Github, Database, Code, TrendingUp, Users } from 'lucide-react';
 import './Projects.css';
 
 const Projects: React.FC = () => {
   const [activeProject, setActiveProject] = useState(0);
 
   const projects = [
+    {
+      title: 'MLM Platform - Multi-Level Marketing System',
+      role: 'Full Stack Developer',
+      description: 'Built a complete production-ready MLM platform with three interconnected applications, featuring payment processing, referral management, and comprehensive admin analytics.',
+      features: [
+        'Complete backend API with NestJS + TypeScript + Drizzle ORM',
+        'Razorpay payment integration for payments and payouts',
+        'JWT + Refresh Token authentication system',
+        'Referral system with automatic ₹250 rewards',
+        'Real-time income analytics and reporting dashboard',
+        'Product management with inventory tracking',
+        'Admin panel with member management and payout processing',
+        'User-facing app with wallet management and shopping cart',
+        'PostgreSQL database with complex relational schemas',
+        'Responsive design across all three applications'
+      ],
+      technologies: ['NestJS', 'TypeScript', 'React', 'PostgreSQL', 'Drizzle ORM', 'Razorpay', 'JWT', 'Node.js', 'CSS3', 'HTML5'],
+      achievement: 'Delivered a complete business solution handling end-to-end MLM operations with automated referral rewards and real-time analytics',
+      icon: <Users />,
+      color: '#8b5cf6',
+      githubUrl: 'https://github.com/yourusername/mlm-platform',
+      liveUrl: 'https://your-mlm-demo.com'
+    },
     {
       title: 'Attendance Management Portal',
       role: 'Backend Developer',
@@ -22,24 +45,30 @@ const Projects: React.FC = () => {
       technologies: ['Java', 'Spring Boot', 'JWT', 'SQL', 'Postman'],
       achievement: 'Implemented secure authentication reducing unauthorized access by 100%',
       icon: <Database />,
-      color: '#3b82f6'
+      color: '#3b82f6',
+      githubUrl: '#',
+      liveUrl: '#'
     },
     {
       title: 'Trip Expenses Tracker',
       role: 'Full Stack Developer',
-      description: 'Developed a comprehensive web application for managing shared trip expenses with real-time calculations and user-friendly interface.',
+      description: 'Built a modern expense tracking application with React, TypeScript, and Supabase. Features secure authentication, real-time expense management, and automatic settlement calculations for group trips.',
       features: [
-        'Responsive web design for mobile and desktop',
-        'Real-time expense splitting algorithms',
-        'User authentication and session management',
-        'Interactive dashboard for expense visualization',
-        'Automated balance calculations',
-        'Export functionality for expense reports'
+        'Secure user authentication with Supabase',
+        'Real-time expense tracking and splitting',
+        'Trip creation and member management',
+        'Fund pool management and settlements',
+        'Responsive design with Netflix-inspired UI',
+        'Interactive dashboard with live updates',
+        'Payment tracking and settlement calculations',
+        'Modern TypeScript + React architecture'
       ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'NestJS', 'Supabase'],
-      achievement: 'Simplified expense tracking for groups, reducing manual calculation errors by 95%',
+      technologies: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'Shadcn/UI', 'React Query', 'Vite'],
+      achievement: 'Delivered a production-ready expense tracker with 95% reduction in manual calculation errors',
       icon: <Code />,
-      color: '#10b981'
+      color: '#10b981',
+      githubUrl: 'https://github.com/yelenderreddy/shared-expense-hive.git',
+      liveUrl: 'https://tripexpenses-tracker.netlify.app/'
     },
     {
       title: 'Big Mart Sales Prediction System',
@@ -56,7 +85,9 @@ const Projects: React.FC = () => {
       technologies: ['Python', 'SQL', 'Machine Learning Libraries', 'REST APIs'],
       achievement: 'Achieved 85% accuracy in sales predictions, helping optimize inventory management',
       icon: <TrendingUp />,
-      color: '#f59e0b'
+      color: '#f59e0b',
+      githubUrl: '#',
+      liveUrl: '#'
     }
   ];
 
@@ -116,14 +147,28 @@ const Projects: React.FC = () => {
                 </div>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">
-                  <Github size={20} />
-                  View Code
-                </a>
-                <a href="#" className="project-link">
-                  <ExternalLink size={20} />
-                  Live Demo
-                </a>
+                {projects[activeProject].githubUrl !== '#' && (
+                  <a 
+                    href={projects[activeProject].githubUrl}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={20} />
+                    View Code
+                  </a>
+                )}
+                {projects[activeProject].liveUrl !== '#' && (
+                  <a 
+                    href={projects[activeProject].liveUrl}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink size={20} />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
 

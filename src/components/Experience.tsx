@@ -23,12 +23,12 @@ const Experience: React.FC = () => {
     },
     {
       year: '2023 - Present',
-      title: 'Backend & Full Stack Development',
-      institution: 'Freelance & Personal Projects',
+      title: 'Backend Development',
+      institution: 'Camelq Software Solutions',
       description: 'Working on various projects showcasing expertise in Java, Spring Boot, React.js, and modern web technologies.',
       icon: <Target />,
       type: 'experience'
-    }
+    },
   ];
 
   const approaches = [
@@ -56,20 +56,20 @@ const Experience: React.FC = () => {
 
   const problemSolving = [
     {
-      title: 'Database Optimization',
-      description: 'Expertise in query optimization and database performance tuning'
+      title: 'Payment Integration',
+      description: 'Successfully integrated Razorpay payment gateway with webhook handling and idempotent operations'
     },
     {
-      title: 'System Architecture',
-      description: 'Design scalable applications with proper separation of concerns'
+      title: 'Database Design',
+      description: 'Designed complex relational schemas for MLM operations with proper indexing and relationships'
     },
     {
-      title: 'Security Implementation',
-      description: 'Implement secure authentication and data protection measures'
+      title: 'Authentication Systems',
+      description: 'Implemented JWT + Refresh Token authentication with secure token management and revocation'
     },
     {
-      title: 'Performance Optimization',
-      description: 'Optimize applications for speed and efficiency'
+      title: 'Real-time Analytics',
+      description: 'Built comprehensive reporting system with income trends, user analytics, and business insights'
     }
   ];
 
@@ -192,13 +192,13 @@ const Experience: React.FC = () => {
             </p>
             <div className="learning-focus">
               <div className="focus-item">
-                <strong>Emerging Technologies:</strong> React.js, TypeScript, Cloud Services
+                <strong>Emerging Technologies:</strong> NestJS, Drizzle ORM, Payment Gateways, Real-time Analytics
               </div>
               <div className="focus-item">
-                <strong>Best Practices:</strong> Clean Code, Design Patterns, Agile Methodologies
+                <strong>Best Practices:</strong> Clean Code, Design Patterns, Secure Authentication, API Design
               </div>
               <div className="focus-item">
-                <strong>Industry Trends:</strong> Microservices, DevOps, AI/ML Integration
+                <strong>Industry Trends:</strong> Full-Stack Development, Business Applications, Scalable Architecture
               </div>
             </div>
           </div>

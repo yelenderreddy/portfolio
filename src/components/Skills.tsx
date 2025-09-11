@@ -113,15 +113,14 @@ const Skills: React.FC = () => {
             <div className="skill-tag">Eclipse IDE</div>
             <div className="skill-tag">VS Code</div>
             <div className="skill-tag">Oracle SQL Developer</div>
-            <div className="skill-tag">Servlets & JSP</div>
-            <div className="skill-tag">Data Structures</div>
             <div className="skill-tag">Collections Framework</div>
             <div className="skill-tag">Exception Handling</div>
-            <div className="skill-tag">Multi-threading</div>
             <div className="skill-tag">File I/O Operations</div>
             <div className="skill-tag">JDBC</div>
             <div className="skill-tag">Responsive Design</div>
-            <div className="skill-tag">Cross-browser Compatibility</div>
+            <div className="skill-tag">Postman</div>
+            <div className="skill-tag">GitHub</div>
+            <div className="skill-tag">Supabase Connection</div>
           </div>
         </motion.div>
       </div>

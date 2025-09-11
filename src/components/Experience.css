@@ -69,6 +69,13 @@
   color: #667eea;
 }
 
+.timeline-item.project .timeline-icon {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+  background: linear-gradient(135deg, #8b5cf6 0%, #a855f7 100%);
+  color: white;
+}
+
 .timeline-year {
   font-size: 0.9rem;
   font-weight: 600;
